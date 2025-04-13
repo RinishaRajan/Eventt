@@ -1,0 +1,191 @@
+
+body
+{
+    background-color:white;
+    border-radius: 10px;
+   
+}
+h1
+{
+    color: chocolate;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+p
+{
+    font-size: 10px;
+    font-style: italic;
+    color:violet;
+    font-family: cursive;
+}
+#image
+{
+    border: 5px solid red ;
+    border-style: dotted;
+    width: 200px;
+    height: 200px;
+}
+
+h2
+{
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul 
+{
+    list-style-type: none;
+    margin-left: 30%;
+    padding: 2px;
+   
+    text-align: center;
+  }
+  li
+  {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+table
+{
+    border-radius: 10px ;
+    border: 2px solid black;
+}
+#contact
+{
+   display: block;
+   width: 500px;
+   height: 700px;
+   float: left;
+}
+
+h3
+{
+  color: brown;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+label
+{
+     text-transform: uppercase;
+     font-style: italic;
+     font-family: cursive;
+}
+input,text
+{padding-top: 10px;}
+
+#login
+{
+ 
+  height: 1000px;
+  width: 100%;
+  font-style: oblique;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h5
+{
+     color: chocolate;
+     font-size:40px;
+     font-family: fantasy;
+}
+#birthday img
+{
+  transition: opacity 0.3s ease;
+}
+#birthday :hover img
+{
+  width: 400px;
+  border-radius: 10px;
+  border: 2px solid pink;
+  opacity: 0.7;
+}
+#marriage
+{
+  text-align: center;
+}
+#gal1 img
+{
+  margin-left: 100px;
+}
+.dropbtn {
+  background-color: white;
+  color:#007bff;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position:absolute;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  right: 0;
+  background-color: white;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:white;
+}
+.navbar-brand:hover img
+{
+  height: 80px;
+  width: 80px;
+}
+nav
+{
+  background-image: url('/static/nav1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.second
+{
+     transition: transform 0.8s ease;
+}
+
+.second:hover
+{
+transform: rotate(-20deg);
+height: 350px;
+width: 350px;
+font-size: 25px;
+}
+.left
+        {
+             transition: transform 0.8s ease;
+        }
+        .left:hover
+        {
+        transform: rotate(20deg);
+        height: 400px;
+        width:400px;
+        }
