@@ -1,0 +1,192 @@
+<html>
+    <head>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'style.css'%}">
+        
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+   
+ .dropbtn {
+  background-image: url('/static/nav1.jpg');
+  
+  background-position: center;
+  color:#007bff;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position:absolute;
+  display: inline-block;
+  
+  
+}
+
+.dropdown-content {
+  display: none;
+  right: 0;
+  background-color: white;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:pink;
+}
+nav{
+  background-image: url('/static/nav1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h2
+        {
+          animation-name: example;
+          animation-duration: 4s;
+
+        }
+        @keyframes example {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+
+
+ 
+   </style>
+       
+            </head>
+        <body>
+        
+          <nav class="navbar navbar-expand-lg  fixed-top">
+           
+            <div class="container">
+             
+                <a class="navbar-brand" href="#">
+                    <img src="{% static '4.png' %}" alt="Logo" height="50px" width="50px">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="story">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services">Services</a>
+                    </li>
+                   
+                    <li>
+                      <div class="dropdown">
+                        <button class="dropbtn">Gallery</button>
+                        <div class="dropdown-content">
+                        <a href="marriage">Marriage</a>
+                        <a href="pubberty">pubberty</a>
+                        <a href="birthday">Birthday</a>
+                        </div>
+                      </div> 
+                    </li>          
+                    <li class="nav-item">
+                        <a class="nav-link" href="about">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="login">
+                       contact
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="admin_log">
+                     Admin
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </nav><br><br><br>
+     
+       
+         <div id="slide" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slide" data-slide-to="0" class="active"></li>
+            <li data-target="#slide" data-slide-to="1"></li>
+            <li data-target="#slide" data-slide-to="2"></li>
+            <li data-target="#slide" data-slide-to="3"></li>
+            <li data-target="#slide" data-slide-to="4"></li>
+        </ul>
+        <div class="carousel-inner">
+           <div class="carousel-item active">
+                
+                <img src="/static/birthday/3.jpg" width="100%" height="375PX">
+                <div class="carousel-caption">
+                  <h2 style="color: rgb(189, 30, 210);font-style: italic;font-family: 'Times New Roman', Times, serif;font-size:50px;text-align: center;margin-bottom: 70px;padding: top 50px;">TIARA EVENTS </h2>
+                   
+                    </div>
+                
+            </div>
+            <div class="carousel-item">
+                <img src="/static/marriage/m6.jpg" width="100%" height="375px">
+                <div class="carousel-caption">
+                  <h2 style="color: pink;font-style: oblique;font-family: 'Times New Roman', Times, serif;     font-size:50px;">WE MAKE YOUR EVENT  MORE SPECIAL</h2>
+                </div>
+           </div>
+            <div class="carousel-item">
+                <img src="/static/marriage/m8.jpg" width="100%" height="375px">
+
+            </div>
+            <div class="carousel-item">
+                <img src="/static/birthday/4.jpg" width="100%" height="375px">
+            </div>
+            <div class="carousel-item">
+              <img src="/static/birthday/9.jpg" width="100%" height="375px">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#slide" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#slide" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        <footer>
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2" style="border-right: 2px solid pink;">
+              <p>123</p>
+              <p>gandhipuram</p>
+            </div>
+            <div class="col-sm-2" style="border-right: 2px solid pink;">
+              <p>ph : 04902373575</p>
+              <p>mob : 9876543210</p>
+            </div>
+            <div class="col-sm-2" style="border-right: 2px solid pink;">
+              <img src="/static/wtsap.jpg" width="25px" height="25px">8289831050
+              <p>abcdef</p>
+            </div>
+            <div class="col-sm-3"><a href="login">
+              <button style="padding-left: 20px; font-size: 16px;margin-left: 20px;margin-top: 22px;border: 2px solid chocolate;font-style: italic;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Book Now
+          </div>
+        </footer>
+        </body>
+
+</html> 
