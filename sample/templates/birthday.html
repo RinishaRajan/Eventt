@@ -1,0 +1,90 @@
+<html>
+    <title>BIRTHDAY</title>
+    <head>        
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style.css'%}">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <style>
+            .row
+               {
+                   margin-top: 20px;
+                   margin-left: 20px;
+               }
+               img{
+                   border: 10px double palevioletred;
+                   border-style: groove;
+                   border-radius: 15px;
+               }
+               body
+               {
+                   background-image: url('/static/birthday/9.jpg');
+                   background-repeat: no-repeat;
+                   background-size: cover;
+               }
+               .second
+        {
+             transition: transform 0.8s ease;
+        }
+        .second:hover
+        {
+        transform: rotate(-20deg);
+        height: 350px;
+        width: 350px;
+        font-size: 25px;
+        }
+        .left
+        {
+             transition: transform 0.8s ease;
+        }
+        .left:hover
+        {
+        transform: rotate(360deg);
+        height: 400px;
+        width:400px;
+        }
+        .zoom:hover
+        {
+            height: 500px;
+            width: 500px;
+            transform: rotate(20deg);
+            position: relative;
+           
+        }
+         </style>
+         </head>
+         <body>
+           <a href="index"><img src="{% static '/back.jpg'%}" height="20px" width="20px"></a>
+           <div class="row">
+         <div class="col-sm-4">
+           <img src="{% static 'birthday/1.jpg' %}" width="300px" height="300px" class="left">
+       </div>
+       <div class="col-sm-4">
+           <img src="{% static '/birthday/7.jpg' %}" width="300px" height="300px" class="zoom">
+       </div>
+       <div class="col-sm-4">
+           <img src="{% static '/birthday/8.jpg' %}" width="300px" height="300px" class="second">
+       </div>
+       </div><br><br>
+       <div class="row">
+       
+       <div class="col-sm-4">
+           <img src="{% static '/birthday/10.jpg' %}" width="300px" height="300px" class="second">
+       </div>
+       <div class="col-sm-4">
+           <img src="{% static '/birthday/11.jpg' %}" width="300px" height="300px" class="zoom">
+       </div>
+       <div class="col-sm-4">
+           <img src="{% static '/birthday/12.jpg' %}" width="300px" height="300px" class="left">
+       </div>
+       </div>
+       
+    </body>
+</html>

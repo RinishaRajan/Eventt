@@ -1,0 +1,122 @@
+<html>
+    <title>
+     Traditional
+    </title>
+    
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style.css'%}">
+        
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <style>
+        .row
+        {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        p{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-decoration: line-through;
+            text-transform: capitalize;
+            font-size: 25px;
+        }
+      
+        .second
+        {
+             transition: transform 0.8s ease;
+        }
+        .second:hover
+        {
+        transform: rotate(-20deg);
+        height: 350px;
+        width: 350px;
+        font-size: 25px;
+        }
+        .left
+        {
+             transition: transform 0.8s ease;
+        }
+        .left:hover
+        {
+        transform: rotate(20deg);
+        height: 400px;
+        width:400px;
+        }
+        .zoom:hover
+        {
+            height: 350px;
+            width: 350px;
+            transform: rotate(10deg);
+            position: relative;
+           
+        }
+        img
+        {
+            border-radius: 50px;
+        }
+        h6{
+            color:rgb(228, 6, 43);
+            font-size: 20px;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        
+      </style>
+    </head>
+    <body>
+        <!--p style="font: 18px;text-decoration: none;">Traditional wedding vows carry centuries of meaning and cultural significance. From the timeless “to have and to hold” to the enduring promise of “in sickness and in health,” these classic wedding vows have united couples across generations. Whether you’re planning to use these time-honored words exactly as they’ve been spoken for centuries or adapt them for your ceremony, discover the beauty and meaning behind traditional marriage vows</p-->
+        <a href="marriage"><img src="{% static '/back.jpg'%}" height="20px" width="20px" ></a>
+        <div class="row">
+
+            <div class="col-sm-4">
+                
+                <img src="{% static 'traditional/1.jpg' %}" width="300px" height="300px"class="second" >
+                <caption><h5 style="text-align: center;">Temple wedding decoration</h1> </caption>
+                <caption><p style="text-align: center;">Rate : 15000</p></caption>
+                <caption><h6 style="text-align: center;">offer rate:10000</h6> </caption>
+                
+               
+            </div>
+            <div class="col-sm-4">
+                <img src="{% static 'traditional/2.jpg' %}" width="300px" height="300px" class="zoom">
+                 <caption><h5 style="text-align: center;">Classy Decoration</h1> </caption>
+                <caption><p style="text-align: center;">Rate : 30000</p></caption>
+                <caption><h6 style="text-align: center;">offer rate:25000</h6> </caption>
+            </div>
+            <div class="col-sm-4">
+                <img src="{% static 'traditional/4.jpg' %}" width="300px" height="300px" class="left">
+                 <caption><h5 style="text-align: center;">Rose Decoration</h1> </caption>
+                <caption><p style="text-align: center;">Rate : 50000</p></caption>
+                <caption><h6 style="text-align: center;">offer rate:40000</h6> </caption>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-4">
+                <img src="{% static 'traditional/3.jpeg' %}" width="300px" height="300px"class="left">
+                <caption><h5 style="text-align: center;">white And Pink</h1> </caption>
+                    <caption><p style="text-align: center;">Rate : 45000</p></caption>
+                    <caption><h6 style="text-align: center;">offer rate:40000</h6> </caption>
+            </div>
+            <div class="col-sm-4">
+                <img src="{% static 'traditional/5.jpg' %}" width="300px" height="300px" class="zoom">
+                <caption><h5 style="text-align: center;">North WeddingDecoration </h1> </caption>
+                    <caption><h6 style="text-align: center;">Rate : 40000</h6></caption>
+                    
+            </div>
+            <div class="col-sm-4">
+                <img src="{% static 'traditional/6.jpg' %}" width="300px" height="300px" class="second">
+                <caption><h5 style="text-align: center;">traditional Decoration</h1> </caption>
+                    <caption><h6 style="text-align: center;">Rate : 30000</h6></caption>
+                   
+            </div>
+        </div>
+    </body>
+</html>

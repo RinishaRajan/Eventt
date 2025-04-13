@@ -1,0 +1,168 @@
+<html>
+    <head>
+      {% load static %}
+      <link rel="stylesheet" href="{% static 'style.css'%}">
+        
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+   .dropbtn {
+  background-color: white;
+  color:#007bff;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position:absolute;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  right: 0;
+  background-color: white;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:pink;
+
+}
+.navbar-brand:hover img
+{
+  height: 80px;
+  width: 80px;
+}
+ 
+
+.hover-effect {
+  transition: transform 0.3s ease;
+}
+.hover-effect:hover {
+  transform: scale(1.3);
+}
+.row img
+{
+   border: 2px solid pink;
+   border-radius: 10px;
+   padding: 5px;
+}
+.second
+{
+  transition: transform 0.3s ease;
+}
+.second:hover
+{
+  transform: rotate(10deg);
+}
+.right
+{
+  transition: transform 0.3s ease; 
+}
+.right:hover
+{
+  transform: rotate(-10deg);
+}
+  </style>
+
+       
+            </head>
+        <body>
+    
+          <!--nav  style="background-color: pink;" class="navbar  navbar-expand-lg  navbar-dark fixed-top"-->
+          <nav    class="navbar navbar-expand-lg  fixed-top">
+              <div class="container">
+                  <!--a class="navbar-brand" href="#">
+                      <img src="{% static '4.png' %}" alt="Logo" height="50px" width="50px">
+                  </a-->
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="story">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="services">Services</a>
+                      </li>
+                     
+                      <li>
+                        <div class="dropdown">
+                          <button style="background-color: white;color: blue;"class="dropbtn">Gallery</button>
+                          <div class="dropdown-content">
+                          <a href="marriage">Marriage</a>
+                          <a href="pubberty">pubberty</a>
+                          <a href="#">Birthday</a>
+                          </div>
+                        </div> 
+                      </li>          
+                      <li class="nav-item">
+                          <a class="nav-link" href="about">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="login">
+                          <img src="/static/login.jpg" width="25px" height="25px">login
+                        </a>
+                    </li>
+                  </ul>
+              </div>
+          </nav><br><br>
+
+        <div  style="text-align: center;font-family: cursive;padding-top: 30px;">
+        <a href="https://www.bing.com/images/search?q=flower%20decoration%20for%20birthday%20events&view=detailv2&FORM=IQFRBA&id=5F813BD576BFF748BBD800A0F1657EF1EF6E3FC0&selectedindex=1&&expw=750&exph=937&ccid=TS6atkjl&ck=D182B09C990DB414B74BF980A14CF75C&simid=607994940094284628&thid=OIP.TS6atkjl5xb0Uhni22UvhgHaJQ&idpp=serp&ajaxhist=0&ajaxserp=0">BIRTHDAY  EVENTS</a>
+        
+            <div class="row">
+             
+                <div class="col-sm-4">
+                  <img src="{% static 'birthday/1.jpg' %}"alt="veg" width="300px" height="300px"  class="hover-effect">
+                </div>
+                <div class="col-sm-4">
+                  <img src="{% static 'birthday/2.jpg' %}"alt="veg" width="300px" height="300px"  class="hover-effect">
+                </div>
+                <div class="col-sm-4">
+                  <img src="{% static 'birthday/3.jpg' %}"alt="veg" width="300px" height="300px"  class="hover-effect">
+                </div>
+            </div>
+            <div style="text-align: center;font-family: cursive;"
+            id="marriage">
+              <a href="https://www.bing.com/images/search?q=flower%20decoration%20for%20marriage%20events&view=detailv2&form=IQFRBA&id=F1A9616BD1F50248BA080862A670FF56A9FDE464&selectedindex=5&expw=750&exph=500&ccid=RRG8vHwT&ck=D18D36BCCE45F44887A2256D14115692&thid=OIP.RRG8vHwTsL8vPcrminHROwHaE8&mediaurl=https%3A%2F%2Fbizimages.withfloats.com%2Factual%2F5a13d3ccfd7a091d9cb51b1f.jpg&pivotparams=insightsToken%3Dccid_kK3u03NX*cp_F95C78295A76843C8A2B6A3141282811*mid_2FBDC8558FD0B0B308F966B67FFF5CDB453BCDF5*simid_607992337364693158*thid_OIP.kK3u03NXlY9WcZrNIr6cfgHaE8&vt=0&sim=11&iss=VSI">MARRIAGE EVENTS</a>
+            <div style="padding-top: 10px;" class="row">
+                <div class="col-sm-4">
+                
+                  <img src="{% static 'marriage/m1.jpg' %}"alt="veg" width="300px" height="300px"  class="second">
+                </div>
+                <div class="col-sm-4">
+                  <img src="{% static 'marriage/m2.jpg' %}"alt="veg" width="300px" height="300px" class="right">
+                </div>
+                <div class="col-sm-4">
+                  <img src="{% static 'marriage/m8.jpg' %}"alt="veg" width="300px" height="300px" class="second">
+                </div>
+              </div>
+            </div>
+        </div>
+</body>
+</html>

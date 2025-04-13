@@ -1,0 +1,45 @@
+<html>
+
+<div class="">
+    {%if datas %}
+    <h3 class="page-header text-primary text-center">Customer DETAILS</h3>
+    <table class="table table=bordered">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>NAME</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Event</th>
+                
+                <th>Update</th>
+                <th>Delete</th>
+                <!--th>Languages</th-->
+                
+            </tr>
+        </thead>
+        {% for data in datas%}
+        <tbody>
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{data.Name}}</td>
+                <td>{{data.Address}}</td>
+                <td>{{data.Mobile}}</td>
+                <td>{{data.Gender}}</td>
+                <td>{{data.Email}}</td>
+                <td>{{data.Event}}</td>
+                
+                <td><a class="btn btn-success" href="updateData/{{data.id}}">Update</a></td>
+                <td><a class="btn btn-danger" href="deleteData/{{data.id}}">Delete</a></td>
+                <!--td>{{data.Language}}</td-->
+            </tr>
+        </tbody>
+        {% endfor %}
+
+    </table>
+    {% endif %}
+</div>
+<a href="index">logout</a>
+</html>

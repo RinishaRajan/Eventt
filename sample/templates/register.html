@@ -1,0 +1,27 @@
+
+<html>
+<body style="border: 10px solid black;padding-left: 10px;background-image: url(/static/nature/flower.jpg);background-repeat: no-repeat;background-size: cover;">
+    <head> {% load static %}
+        <link rel="stylesheet" href="{% static 'style.css'%}"></head>
+    
+    
+   
+<h3 style="color: violet;text-align: center;text-transform: uppercase;font-style: italic;font-family: cursive;">Register here</h3>
+	<hr>
+	
+	<form action="" method="POST">
+	    {% csrf_token %}
+      {% for field in form %}
+      <div style="color:goldenrod;font-size: 20px;">
+        <p>{{ field.label }}: <br> {{ field }}</p> 
+
+        {% for error in field.errors %}
+            <small style="color: red">{{ error }}</small>
+        {% endfor %}
+    </div>
+    {% endfor %}
+        <button style="color: green;background-color: grey;margin-left: 50%;height: 50px;border: 5px solid yellow;border-radius: 10px;" type="submit">Register</button>
+	</form>
+    </body>
+    </html>
+
